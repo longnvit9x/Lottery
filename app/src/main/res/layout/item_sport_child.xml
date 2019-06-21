@@ -80,7 +80,7 @@
                     android:layout_margin="@dimen/dimen_10dp"
                     android:textColor="@color/black"
                     android:textSize="@dimen/text_size_tv"
-                    tools:text="-" />
+                    android:text="-" />
 
                 <TextView
                     android:id="@+id/tv_number_team_2"
