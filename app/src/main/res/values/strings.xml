@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Lottery</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_lottery">Kết quả xổ số</string>
+    <string name="menu_sport">Dữ liệu bóng đá</string>
+    <string name="LOTTERY">Kết quả xổ số</string>
+    <string name="SPORT">Dữ liệu bóng đá</string>
+    <string name="MB">MIỀN BẮC</string>
+    <string name="MN">MIỀN NAM</string>
+    <string name="MT">MIỀN TRUNG</string>
+    <string name="FORMAT_DATE_TIME_HEADER" formatted="false">Kết quả sổ số %s ngày %s/%s/%s</string>
+    <string name="NHA">Bóng đá Anh</string>
+    <string name="TBN">Bóng đá Tây Ban Nha</string>
+    <string name="BDA">Bóng đá Anh</string>
+    <string name="CP">Champions League</string>
+    <string name="EL">Europa League</string>
+    <string name="VN">Bóng đá Việt Nam</string>
+</resources>
