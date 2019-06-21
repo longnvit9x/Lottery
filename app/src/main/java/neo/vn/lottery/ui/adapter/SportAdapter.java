@@ -9,7 +9,9 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 
 import neo.vn.lottery.R;
+import neo.vn.lottery.model.DateItem;
 import neo.vn.lottery.model.SportItem;
+import neo.vn.lottery.model.TranDau;
 
 public class SportAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private Context context;
@@ -39,7 +41,11 @@ public class SportAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder viewHolder, int position) {
-
+        if(getItemViewType(position)== ITEM_SECTION){
+            ((SportSectionViewHolder)viewHolder).bindData((DateItem)list.get(position)) ;
+        } else {
+            ((SportChildViewHolder)viewHolder).bindData((TranDau)list.get(position)) ;
+        }
     }
 
     @Override

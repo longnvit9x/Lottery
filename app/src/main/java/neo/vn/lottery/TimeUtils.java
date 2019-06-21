@@ -1,11 +1,31 @@
 package neo.vn.lottery;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 
 import neo.vn.lottery.model.Triple;
 
 public class TimeUtils {
+    public static final String DAY_MONTH_YEAR = "dd/MM/yyyy";
+
+    public static String formatDateToString(Date source, String format) {
+        if (source == null) {
+            return null;
+        }
+        if (format == null || format.isEmpty()) {
+            return null;
+        }
+        SimpleDateFormat sdf = getDateFormat(format);
+        return sdf.format(source);
+    }
+
+    public static SimpleDateFormat getDateFormat(String pattern) {
+        SimpleDateFormat format = new SimpleDateFormat(pattern, Locale.getDefault());
+        return format;
+    }
+
     public static Triple getYearMonthDay(Date date) {
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(date);

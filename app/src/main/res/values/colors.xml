@@ -8,4 +8,5 @@
     <color name="white">#ffffff</color>
     <color name="bgr_select_item_pin">#FFF5CF</color>
     <color name="stroke_product_container">#ECECEC</color>
+    <color name="red">#FF0015</color>
 </resources>

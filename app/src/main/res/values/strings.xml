@@ -29,4 +29,8 @@
     <string name="CP">Champions League</string>
     <string name="EL">Europa League</string>
     <string name="VN">Bóng đá Việt Nam</string>
+    <string name="DEFAULT_TITLE_PROGRESS">Vui lòng chờ....</string>
+    <string name="FRA">Pháp</string>
+    <string name="ITA">Ý</string>
+    <string name="NO_RESULT">Không có trận đấu nào</string>
 </resources>

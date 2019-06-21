@@ -9,6 +9,7 @@ import android.widget.TextView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import neo.vn.lottery.R;
+import neo.vn.lottery.model.TranDau;
 
 public class SportChildViewHolder extends RecyclerView.ViewHolder {
     public SportChildViewHolder(View itemView) {
@@ -30,8 +31,22 @@ public class SportChildViewHolder extends RecyclerView.ViewHolder {
     TextView tvNameTeam2;
     @BindView(R.id.tv_number_team_2)
     TextView tvNumberTeam2;
+    @BindView(R.id.tv_house)
+    TextView tvHouse;
 
-    public void binData() {
+    public void bindData(TranDau tranDau) {
+        tvNameTeam1.setText(tranDau.doiNha);
+        tvNameTeam2.setText(tranDau.doiKhach);
+        tvHouse.setText(tranDau.gioDa);
 
+        if(tranDau.banThangDoiNha.equals("-1") || tranDau.banThangDoiNha.equals("")){
+            container.setBackgroundColor(itemView.getResources().getColor(R.color.colorAccent));
+            tvNumberTeam1.setText("...");
+            tvNumberTeam2.setText("...");
+        } else {
+            container.setBackgroundColor(itemView.getResources().getColor(R.color.white));
+            tvNumberTeam1.setText(tranDau.banThangDoiNha);
+            tvNumberTeam2.setText(tranDau.banThangDoiKhach);
+        }
     }
 }

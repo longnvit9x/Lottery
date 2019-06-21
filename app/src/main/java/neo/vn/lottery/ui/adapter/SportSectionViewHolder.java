@@ -7,6 +7,7 @@ import android.widget.TextView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import neo.vn.lottery.R;
+import neo.vn.lottery.model.DateItem;
 
 public class SportSectionViewHolder extends RecyclerView.ViewHolder {
     public SportSectionViewHolder(View itemView) {
@@ -17,7 +18,7 @@ public class SportSectionViewHolder extends RecyclerView.ViewHolder {
     @BindView(R.id.tv_date)
     TextView tvDate;
 
-    public void bindData() {
-
+    public void bindData(DateItem dateItem) {
+        tvDate.setText(dateItem.getDate());
     }
 }

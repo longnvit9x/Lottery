@@ -1,11 +1,8 @@
 package neo.vn.lottery.model;
 
 public class SportItem {
-    public SportItem(Boolean isSection) {
-        this.isSection = isSection;
-    }
 
-    private Boolean isSection;
+    private Boolean isSection = false;
 
     public Boolean getSection() {
         return isSection;

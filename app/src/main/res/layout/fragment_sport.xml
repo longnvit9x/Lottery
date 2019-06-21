@@ -31,5 +31,12 @@
         android:layout_marginTop="@dimen/dimen_5dp">
 
     </android.support.v7.widget.RecyclerView>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_no_result"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/NO_RESULT"/>
 
 </LinearLayout>

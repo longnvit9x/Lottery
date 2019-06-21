@@ -38,6 +38,7 @@ public class TabAdapter extends RecyclerView.Adapter<TabLotteryViewHolder> {
                 notifyItemChanged(tabSelectedOld);
                 notifyItemChanged(positon);
                 tabSelectedOld = positon;
+                interactor.onSelect(positon);
             }
         });
     }

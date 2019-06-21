@@ -8,6 +8,7 @@ import com.google.gson.GsonBuilder;
 import java.security.KeyManagementException;
 import java.security.NoSuchAlgorithmException;
 import java.security.cert.CertificateException;
+import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 import javax.net.ssl.HostnameVerifier;
@@ -17,6 +18,8 @@ import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
 
+import io.reactivex.Completable;
+import io.reactivex.Observable;
 import neo.vn.lottery.BuildConfig;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
@@ -137,6 +140,19 @@ public class ApiRequest {
                     .build();
         }
         mService = mRetrofit.create(APIService.class);
+    }
+
+
+    public Observable<LotteryEntity> getLottery(String tenMien, String date) {
+        return mService.getLottery(tenMien, date);
+    }
+
+    public Observable<ArrayList<GiauDauEntity>> getGiaiDau(String tenGiai) {
+        return mService.getGiaiDau(tenGiai);
+    }
+
+    public Observable<ArrayList<TranDauEntity>> getListTranDau(String id) {
+        return mService.getListTranDau(id);
     }
 
 }
